@@ -1,7 +1,8 @@
 ;; Packages and package configuration ======================
+
 (prelude-require-packages '(terraform-mode company-terraform))
 
-(add-hook 'terraform-mode (lambda ()
-                            ()
-                            (terraform-format-on-save-mode)
-                            (company-terraform-init)))
+(with-eval-after-load 'terraform-mode
+  (company-terraform-init))
+
+(add-hook 'terraform-mode-hook #'terraform-format-on-save-mode)
