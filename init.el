@@ -86,7 +86,6 @@
 (require 'init-projectile)
 
 (require 'init-compile)
-(require 'init-crontab)
 (require 'init-textile)
 (require 'init-markdown)
 (require 'init-csv)
@@ -111,6 +110,7 @@
 (require 'init-yaml)
 (require 'init-docker)
 (require 'init-terraform)
+(require 'init-golang)
 ;;(require 'init-nix)
 (maybe-require-package 'nginx-mode)
 
