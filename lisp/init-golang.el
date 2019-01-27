@@ -30,14 +30,15 @@
 ;;; Code:
 
 (when (maybe-require-package 'go-mode)
-  (maybe-require-package 'company-go)
   (maybe-require-package 'go-eldoc)
   (maybe-require-package 'gotest)
   (maybe-require-package 'go-projectile)
+  (maybe-require-package 'auto-complete)
+  (maybe-require-package 'go-autocomplete)
   (require 'go-projectile)
+  (require 'go-autocomplete)
 
   (after-load 'go-mode
-
     ;; Prefer goimports to gofmt if installed
     (let ((goimports (executable-find "goimports")))
       (when goimports
@@ -55,7 +56,6 @@
     (setq-default tab-width 4)
 
     (define-key 'help-command (kbd "G") 'godoc)
-    (add-hook 'before-save-hook 'gofmt-before-save) ; gofmt before every save
 
     ;; Add to default go-mode key bindings
     (let ((map go-mode-map))
@@ -72,9 +72,14 @@
       (define-key map (kbd "M-[") 'previous-error) ; Go to previous error or msg
       )
 
-    ;; Company mode settings
-    (set (make-local-variable 'company-backends) '(company-go))
-    ))
+    ;; guru settings
+    (go-guru-hl-identifier-mode)        ; highlight identifiers
 
-(provide 'init-golang)
+    ;; Hooks for Go mode
+    (add-hook 'before-save-hook 'gofmt-before-save) ; gofmt before every save
+    (add-hook 'go-mode-hook (lambda ()
+                              (auto-complete-mode 1)))
+    )
+
+  (provide 'init-golang))
 ;;; init-golang.el ends here
