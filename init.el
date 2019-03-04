@@ -185,3 +185,10 @@
 ;; no-byte-compile: t
 ;; End:
 ;;; init.el ends here
+(require 'org)
+(package-initialize)
+(require 'ein)
+(require 'ein-notebook)
+(require 'ein-subpackages)
+(require 'elpy)
+(elpy-enable)
