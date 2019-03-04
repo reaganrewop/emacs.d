@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /url/cache
 /.emacs.desktop
 /auto-save-list
@@ -52,3 +53,33 @@ site-lisp/package/
 /forge-database.sqlite
 
 projectile.cache
+=======
+*~
+*.elc
+auto-save-list
+recentf
+savehist
+saveplace
+eshell
+elpa
+el-get
+semanticdb
+url
+ede-projects.el
+.DS_Store
+custom.el
+places
+.smex-items
+savefile/
+projectile-bookmarks.eld
+session*
+.cask
+tramp
+/var/pcache
+.emacs.desktop
+.emacs.desktop.lock
+network-security.data
+prelude-cheatsheet.el
+prelude-cheatsheet.aux
+prelude-cheatsheet.log
+>>>>>>> 1ec67804787b43153f3aaaf9feed3fa9d1d5fa06
