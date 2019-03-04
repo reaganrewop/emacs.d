@@ -1,0 +1,18 @@
+;;; -*- coding: utf-8; -*-
+;;; Automatically generated on Sun Jan 27 00:04:54 2019
+;;; Invoked by karthik@Karthiks-MacBook-Pro.local using 26.1
+(setq-default kill-ring '(#("resource \"alicloud_cdn_domain\" {}" 0 8 (fontified t face font-lock-function-name-face) 8 9 (fontified t) 9 30 (fontified t face font-lock-string-face) 30 31 (fontified t) 31 32 (fontified t face ...) 32 33 (fontified t face ...)) "git clone https://github.com/purcell/emacs.d.git ~/.emacs.d
+"))
+(setq-default session-file-alist '(("~/Developer/etherlabs/gaia/modules/alb-service/variables.tf" 1 1 1 nil nil 3958 (overwrite-mode)) ("~/Developer/etherlabs/gaia/modules/alb-service/main.tf" 1233 439 1 nil nil 439 (overwrite-mode)) ("~/Developer/etherlabs/gaia/secrets.tfvars.template" 1 nil 1 nil nil 1 (overwrite-mode)) ("~/.emacs.d/init.el" 1398 nil 1 nil nil 6679 (overwrite-mode)) ("~/.emacs.d/lisp/init-python.el" 661 661 1 nil nil 661 (overwrite-mode)) ("~/.emacs.d/custom.el" 1 nil 1 nil nil 2746 (overwrite-mode))))
+(setq-default file-name-history '(#("/Users/karthik/Developer/etherlabs/gaia/modules/alb-service/variables.tf" 0 72 (ivy-index 5)) "~/Developer/etherlabs/gaia/modules/alb-service/main.tf" #("/Users/karthik/Developer/etherlabs/gaia/" 0 40 (ivy-index 0)) "~/Developer/etherlabs/gaia/secrets.tfvars.template" #("/Users/karthik/.emacs.d/lisp/" 0 29 (ivy-index 0)) "~/.emacs.d/lisp/init-python.el" "~/.emacs.d/init.el" "~/.emacs.d/lisp/init-clojure.el" "~/.emacs.d/custom.el"))
+(setq-default command-history '((terraform-format-on-save-mode (quote toggle)) (help) (projectile-find-file-in-directory "/Users/karthik/Developer/etherlabs/gaia/") (dired "/Users/karthik/Developer/etherlabs/gaia/" nil) (list-directory "/Users/karthik/Developer/etherlabs/gaia/" nil) (ag "ls" "/Users/karthik/.emacs.d/lisp/") (projectile-ag "add-hook" nil) (yari-helm)))
+(setq-default counsel-M-x-history '(#("terra" 0 5 (ivy-index 3)) #("hel" 0 3 (ivy-index 1)) "ag" #("projectile" 0 10 (ivy-index 0)) #("helm" 0 4 (ivy-index 0))))
+(setq-default counsel-git-grep-cmd-history '("git --no-pager grep --full-name -n --no-color -i -I -e \"%s\""))
+(setq-default ivy-history '(#("main" 0 4 (ivy-index 1)) "lisp/init-clojure.el" "~/.emacs.d/"))
+(setq-default minibuffer-history '("ls" "add-hook"))
+(setq-default occur-collect-regexp-history '("\\1"))
+(setq-default serial-name-history '("/dev/ttys0"))
+(setq-default serial-speed-history '("9600" "1200" "2400" "4800" "14400" "19200" "28800" "38400" "57600" "115200"))
+(setq-default slime-connect-host-history '("localhost"))
+(setq-default slime-connect-port-history '("4005"))
+(setq-default smex-history '(terraform-format-on-save-mode help ag projectile-ag yari-helm cd ri))

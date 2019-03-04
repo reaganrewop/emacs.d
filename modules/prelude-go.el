@@ -77,7 +77,7 @@
   (setq prelude-go-mode-hook 'prelude-go-mode-defaults)
 
   (add-hook 'go-mode-hook (lambda ()
-                            (run-hooks 'prelude-go-mode-hook))))
+                            (run-hooks 'prelude-go-mode-hook)))
 
-(provide 'prelude-go)
+  (provide 'prelude-go))
 ;;; prelude-go.el ends here
